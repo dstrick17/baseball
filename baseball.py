@@ -16,7 +16,7 @@ player_id = 624413  # Pete Alonso MLB ID
 # statcast_data = pybaseball.statcast() # Stat cast is by pitch
 
 season2024_batting_stats = pybaseball.batting_stats_bref(2024)
-mets_batting_stats = season2024_batting_stats[(season2024_batting_stats['Lev'] == 'Maj-NL') & (season2024_batting_stats['Tm'] == 'New York')]
+mets_batting_stats = season2024_batting_stats[season2024_batting_stats['Tm'] == 'NYM']
 print(mets_batting_stats)
 
 
